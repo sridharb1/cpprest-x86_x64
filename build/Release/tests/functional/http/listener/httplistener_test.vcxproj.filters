@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\building_response_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\connections_and_errors.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\header_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\listener_construction_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\reply_helper_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\request_extract_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\request_handler_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\request_relative_uri_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\request_stream_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\requests_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\response_stream_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\status_code_reason_phrase_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\to_string_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\listener\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

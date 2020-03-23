@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\datetime.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\base64.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\strings.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\macro_test.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\nonce_generator_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\win32_encryption_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\utils\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_compression.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_helpers.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_listener.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_listener_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_api.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\oauth\oauth1.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\oauth\oauth2.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json_parsing.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json_serialization.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\uri\uri.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\uri\uri_builder.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\asyncrt_utils.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\base64.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\web_utilities.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client_wspp.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pplx\pplxwin.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pplx\threadpool.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_winhttp.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\x509_cert_utilities.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\streams\fileio_win32.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_httpsys.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pch\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\astreambuf.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\asyncrt_utils.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\base_uri.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\containerstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\filestream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_client.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_compression.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_headers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_listener.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_msg.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\interopstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\json.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\oauth1.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\oauth2.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\producerconsumerstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\rawptrstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\streams.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\uri.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\uri_builder.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\version.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\ws_client.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\ws_msg.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplx.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxcancellation_token.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxconv.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxinterface.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxlinux.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxtasks.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxwin.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\SafeInt3.hpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\basic_types.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\cpprest_compat.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\fileio.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_helpers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_server.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_server_api.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\nosal.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\resource.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\web_utilities.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\pch\stdafx.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_impl.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\common\connection_pool_helpers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\common\internal_http_helpers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_impl.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client_impl.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\threadpool.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_httpsys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_constants.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2E0AE008-EB07-3050-A6EC-27DB693D9BB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpprest">
+      <UniqueIdentifier>{DC160857-8602-3BAE-801C-5AA9248D3EB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpprest\details">
+      <UniqueIdentifier>{BC7272DD-7E0B-3859-BB4A-2B7AEAF67164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pplx">
+      <UniqueIdentifier>{37956D21-5A4D-397B-A932-6ADEB35B602C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

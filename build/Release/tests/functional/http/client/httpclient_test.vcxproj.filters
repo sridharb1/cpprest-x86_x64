@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\authentication_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\building_request_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\client_construction.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\compression_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\connection_pool_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\connections_and_errors.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\header_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\http_client_fuzz_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\http_client_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\http_methods_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\multiple_requests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\oauth1_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\oauth2_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\outside_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\pipeline_stage_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\progress_handler_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\proxy_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\request_helper_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\request_stream_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\request_uri_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\response_extract_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\response_stream_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\status_code_reason_phrase_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\to_string_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\client\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

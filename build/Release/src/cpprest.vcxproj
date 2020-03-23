@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33E4A8BF-99A1-3393-A900-B531BDA00C97}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cpprest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;$(ProjectDir)..\..\..\..\zlib;$(ProjectDir)..\..\..\..\..\Boost\include\boost-1_72;$(ProjectDir)..\..\..\..\brotli\c\include;$(ProjectDir)..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;$(ProjectDir)..\..\..\..\websocketpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm120</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ZLIB_WINAPI;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;$(ProjectDir)..\..\..\..\zlib;$(ProjectDir)..\..\..\..\..\Boost\include\boost-1_72;$(ProjectDir)..\..\..\..\brotli\c\include;$(ProjectDir)..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;$(ProjectDir)..\..\..\..\websocketpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm120</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ZLIB_WINAPI;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;$(ProjectDir)..\..\..\..\zlib;$(ProjectDir)..\..\..\..\..\Boost\include\boost-1_72;$(ProjectDir)..\..\..\..\brotli\c\include;$(ProjectDir)..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;$(ProjectDir)..\..\..\..\websocketpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm120</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ZLIB_WINAPI;NDEBUG;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;$(ProjectDir)..\..\..\..\zlib;$(ProjectDir)..\..\..\..\..\Boost\include\boost-1_72;$(ProjectDir)..\..\..\..\brotli\c\include;$(ProjectDir)..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;$(ProjectDir)..\..\..\..\websocketpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm120</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ZLIB_WINAPI;NDEBUG;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_NO_ASYNCRTIMP;_NO_PPLXIMP;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Release\include;$(ProjectDir)..\..\..\Release\src\pch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\astreambuf.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\asyncrt_utils.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\base_uri.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\containerstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\filestream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_client.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_compression.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_headers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_listener.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\http_msg.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\interopstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\json.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\oauth1.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\oauth2.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\producerconsumerstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\rawptrstream.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\streams.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\uri.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\uri_builder.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\version.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\ws_client.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\ws_msg.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplx.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxcancellation_token.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxconv.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxinterface.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxlinux.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxtasks.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\pplxwin.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\SafeInt3.hpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\basic_types.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\cpprest_compat.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\fileio.h" />
+    <None Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_constants.dat" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_helpers.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_server.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\http_server_api.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\nosal.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\resource.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\cpprest\details\web_utilities.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\pch\stdafx.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_impl.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_msg.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\common\connection_pool_helpers.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_compression.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_helpers.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\common\http_msg.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\common\internal_http_helpers.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_listener.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_listener_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_api.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_impl.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\oauth\oauth1.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\oauth\oauth2.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json_parsing.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\json\json_serialization.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\uri\uri.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\uri\uri_builder.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\asyncrt_utils.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\base64.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\utilities\web_utilities.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_msg.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client_impl.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\websockets\client\ws_client_wspp.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pplx\pplxwin.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pplx\threadpool.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\include\pplx\threadpool.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\http_client_winhttp.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\client\x509_cert_utilities.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\streams\fileio_win32.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_httpsys.cpp" />
+    <ClInclude Include="$(ProjectDir)..\..\..\Release\src\http\listener\http_server_httpsys.h" />
+    <ClCompile Include="$(ProjectDir)..\..\..\Release\src\pch\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
+      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\AssertException.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\CompositeTestReporter.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\CurrentTest.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\DeferredTestReporter.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\DeferredTestResult.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\GlobalSettings.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\MemoryOutStream.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\ReportAssert.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\Test.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestDetails.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestList.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestReporter.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestReporterStdout.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestResults.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\TestRunner.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\XmlTestReporter.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\Win32\TimeHelpers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

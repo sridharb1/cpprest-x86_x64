@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\accessor_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\combining_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\constructor_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\conversions_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\diagnostic_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\encoding_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\operator_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\splitting_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\uri_builder_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\resolve_uri_tests.cpp" />
+    <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\uri\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{521DFB75-D823-3A2D-AE77-A516978A1B49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

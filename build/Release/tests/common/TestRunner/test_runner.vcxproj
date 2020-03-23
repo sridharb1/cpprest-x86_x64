@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC7FDB20-78EB-3411-92AE-42E1BF44AE7C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>test_runner</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winhttp.lib;httpapi.lib;bcrypt.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/cpprestsdk/build/Release/Binaries/Debug/test_runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/cpprestsdk/build/Release/Binaries/Debug/test_runner.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winhttp.lib;httpapi.lib;bcrypt.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/cpprestsdk/build/Release/Binaries/Debug/test_runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/cpprestsdk/build/Release/Binaries/Debug/test_runner.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winhttp.lib;httpapi.lib;bcrypt.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/cpprestsdk/build/Release/Binaries/Release/test_runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/cpprestsdk/build/Release/Binaries/Release/test_runner.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;DESKTOP_TEST_RUNNER;_NO_ASYNCRTIMP;_NO_PPLXIMP;TEST_UTILITY_API=;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\http\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winhttp.lib;httpapi.lib;bcrypt.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/cpprestsdk/build/Release/Binaries/Release/test_runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/cpprestsdk/build/Release/Binaries/Release/test_runner.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\common\utilities\common_utilities.vcxproj">
+      <Project>{4C60DFBB-B22D-365B-A25F-E991038A057C}</Project>
+      <Name>common_utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\src\cpprest.vcxproj">
+      <Project>{33E4A8BF-99A1-3393-A900-B531BDA00C97}</Project>
+      <Name>cpprest</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\http\client\httpclient_test.vcxproj">
+      <Project>{DD80E321-D8E0-34EB-836B-C6D4B668AE42}</Project>
+      <Name>httpclient_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\http\listener\httplistener_test.vcxproj">
+      <Project>{9C6CD6F0-E09E-32CF-9410-0BE0081FF288}</Project>
+      <Name>httplistener_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\http\utilities\httptest_utilities.vcxproj">
+      <Project>{E0B5054C-24A6-35C8-95D8-23255C3DF58D}</Project>
+      <Name>httptest_utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\json\json_test.vcxproj">
+      <Project>{CEEEEE56-787E-380C-9D2F-999D587A47C1}</Project>
+      <Name>json_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\pplx\pplx_test\pplx_test.vcxproj">
+      <Project>{DF76D7CF-E3F4-30CB-A588-779AFB225336}</Project>
+      <Name>pplx_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\streams\streams_test.vcxproj">
+      <Project>{82AFC51E-4325-3FF3-8BF6-3A3055E15F0A}</Project>
+      <Name>streams_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\common\UnitTestpp\unittestpp.vcxproj">
+      <Project>{99410769-8D16-3ADF-8EC8-2D1712A50338}</Project>
+      <Name>unittestpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\uri\uri_test.vcxproj">
+      <Project>{DF2C22E9-04FC-3AFB-AC6D-1FF989C56439}</Project>
+      <Name>uri_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="$(ProjectDir)..\..\..\..\..\build\Release\tests\functional\utils\utils_test.vcxproj">
+      <Project>{996AE6B2-04A3-3D99-9A30-20BB4A6A9A4A}</Project>
+      <Name>utils_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Release\tests\common\TestRunner\test_module_loader.cpp" />
+    <ClCompile Include="..\..\..\..\..\Release\tests\common\TestRunner\test_runner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Release\tests\common\TestRunner\test_module_loader.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -9,7 +9,7 @@ along with using natively compiled libraries like websocketpp etc.
 
 # Installation #
 
-  * git clone [cpprestsdk, tested w/ v2.10.15](https://github.com/microsoft/cpprestsdk) into a local folder. I switched the branch to the latest in the v1.1.1 branch.
+  * git clone [cpprestsdk, tested w/ v2.10.15](https://github.com/microsoft/cpprestsdk) into a local folder.
   * git clone [cpprest-x86_x64](https://github.com/sridharb1/cpprest-x86_x64) into another folder. 
   * Copy the contents of the build folder of cpprest-x86_x64 into the cpprestsdk tree.
 

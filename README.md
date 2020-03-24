@@ -24,3 +24,23 @@ To compile cpprestsdk, you need
   * Use my [websocketpp-x86_x64](https://github.com/sridharb1/websocketpp-x86_x64) to compile on Windows.
   * [brotli, tested w/ v1.0.7+](https://github.com/google/brotli)
   * Use my [brotli-x86_x64](https://github.com/sridharb1/brotli-x86_x64) to compile on Windows
+  * Get the latest boost (I used v1.72). Instructions available at [Boost with git](https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview)
+  * My projects follow this heirarchy. I keep all the projects in the
+    same level, for e.g. zlib is in E:\Projects\zlib, websocketpp is
+    in E:\Projects\websocketpp etc. boost sources would be in
+    E:\Projects\Boost.
+  * The last command below install boost headers and libraries in
+    E:\Boost. These projects refer to this relative path (i.e. the
+    installed boost is in one level higher than the Projects folder).
+  * This command uses toolset=msvc-14.2 (aka VS 2019). As newer
+    versions come, please adjust accordingly. Please refer to [Boost Toolsets](https://boostorg.github.io/build/manual/develop/index.html).
+  * This builds static boost libraries for x86/x64/Release/Debug with
+    CRT DLL runtimes. This is the combination that I use in all my
+    projects.
+
+  ``` shell
+  git clone --recursive https://github.com/boostorg/boost.git
+  cd boost
+  .\bootstrap
+  .\b2 -a -j8 toolset=msvc-14.2 architecture=x86 address-model=32,64 --prefix=E:\Boost variant=debug,release link=static runtime-link=shared threading=multi install
+  ```

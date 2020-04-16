@@ -12,18 +12,26 @@ along with using natively compiled libraries like websocketpp etc.
   * git clone [cpprestsdk, tested w/ v2.10.15](https://github.com/microsoft/cpprestsdk) into a local folder.
   * git clone [cpprest-x86_x64](https://github.com/sridharb1/cpprest-x86_x64) into another folder. 
   * Copy the contents of the build folder of cpprest-x86_x64 into the cpprestsdk tree.
+  * cpprestsdk depends upon other libraries. Those libraries and how
+    to get them to compile with Visual Studio is detailed in the
+    section below.
 
 # Note #
 
 To compile cpprestsdk, you need 
 
   * [zlib, tested w/ v1.2.11](https://github.com/madler/zlib)
-  * [OpenSSL, tested w/ v1.1.1e-DEV](https://github.com/openssl/openssl)
-  * You can use my [openssl-x86_x64](https://github.com/sridharb1/openssl-x86_x64) to compile openssl on Windows.
+  * Use my [zlib-x86_x64](https://github.com/sridharb1/zlib-x86_x64) to compile zlib on Windows.
+  * [OpenSSL, tested w/ v1.1.1g-DEV](https://github.com/openssl/openssl)
+  * Use my [openssl-x86_x64](https://github.com/sridharb1/openssl-x86_x64) to compile openssl on Windows.
   * [websocketpp, tested w/ v0.8.1](https://github.com/zaphoyd/websocketpp)
   * Use my [websocketpp-x86_x64](https://github.com/sridharb1/websocketpp-x86_x64) to compile on Windows.
   * [brotli, tested w/ v1.0.7+](https://github.com/google/brotli)
   * Use my [brotli-x86_x64](https://github.com/sridharb1/brotli-x86_x64) to compile on Windows
+  * boost c++ libraries. See how to fetch and compile boost below.
+
+## Fetching and compiling boost ##
+
   * Get the latest boost (I used v1.72). Instructions available at [Boost with git](https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview)
   * My projects follow this heirarchy. I keep all the projects in the
     same level, for e.g. zlib is in E:\Projects\zlib, websocketpp is

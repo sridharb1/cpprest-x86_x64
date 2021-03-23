@@ -22,17 +22,17 @@ To compile cpprestsdk, you need
 
   * [zlib, tested w/ v1.2.11](https://github.com/madler/zlib)
   * Use my [zlib-x86_x64](https://github.com/sridharb1/zlib-x86_x64) to compile zlib on Windows.
-  * [OpenSSL, tested w/ v1.1.1g-DEV](https://github.com/openssl/openssl)
+  * [OpenSSL, tested w/ v1.1.1j-DEV](https://github.com/openssl/openssl)
   * Use my [openssl-x86_x64](https://github.com/sridharb1/openssl-x86_x64) to compile openssl on Windows.
-  * [websocketpp, tested w/ v0.8.1](https://github.com/zaphoyd/websocketpp)
+  * [websocketpp, tested w/ v0.8.2](https://github.com/zaphoyd/websocketpp)
   * Use my [websocketpp-x86_x64](https://github.com/sridharb1/websocketpp-x86_x64) to compile on Windows.
-  * [brotli, tested w/ v1.0.7+](https://github.com/google/brotli)
+  * [brotli, tested w/ v1.0.9](https://github.com/google/brotli)
   * Use my [brotli-x86_x64](https://github.com/sridharb1/brotli-x86_x64) to compile on Windows
   * boost c++ libraries. See how to fetch and compile boost below.
 
 ## Fetching and compiling boost ##
 
-  * Get the latest boost (I used v1.72). Instructions available at [Boost with git](https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview)
+  * Get the latest boost (I used v1.75). Instructions available at [Boost with git](https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview)
   * My projects follow this heirarchy. I keep all the projects in the
     same level, for e.g. zlib is in E:\Projects\zlib, websocketpp is
     in E:\Projects\websocketpp etc. boost sources would be in

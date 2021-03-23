@@ -91,6 +91,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;COMMONUTILITIES_EXPORTS;_NO_ASYNCRTIMP;_NO_PPLXIMP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;COMMONUTILITIES_EXPORTS;_NO_ASYNCRTIMP;_NO_PPLXIMP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -127,6 +128,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;COMMONUTILITIES_EXPORTS;_NO_ASYNCRTIMP;_NO_PPLXIMP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;_WINSOCK_DEPRECATED_NO_WARNINGS;COMMONUTILITIES_EXPORTS;_NO_ASYNCRTIMP;_NO_PPLXIMP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -220,12 +222,6 @@
     <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\os_utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="E:\Projects\cpprestsdk\build\Release\src\cpprest.vcxproj">
       <Project>{33E4A8BF-99A1-3393-A900-B531BDA00C97}</Project>
       <Name>cpprest</Name>

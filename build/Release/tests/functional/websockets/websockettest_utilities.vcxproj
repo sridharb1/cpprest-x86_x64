@@ -74,7 +74,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -110,7 +110,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -146,7 +146,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
       <ConformanceMode>true</ConformanceMode>
@@ -182,7 +182,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\websocketpp;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
       <ConformanceMode>true</ConformanceMode>
@@ -220,12 +220,6 @@
     <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\functional\websockets\utilities\test_websocket_server.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="E:\Projects\cpprestsdk\build\Release\tests\common\utilities\common_utilities.vcxproj">
       <Project>{4C60DFBB-B22D-365B-A25F-E991038A057C}</Project>
       <Name>common_utilities</Name>

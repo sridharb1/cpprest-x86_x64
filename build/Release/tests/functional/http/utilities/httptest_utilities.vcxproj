@@ -223,12 +223,6 @@
     <ClCompile Include="$(ProjectDir)..\..\..\..\..\..\Release\tests\functional\http\utilities\test_server_utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="E:\Projects\cpprestsdk\build\Release\tests\common\utilities\common_utilities.vcxproj">
       <Project>{4C60DFBB-B22D-365B-A25F-E991038A057C}</Project>
       <Name>common_utilities</Name>

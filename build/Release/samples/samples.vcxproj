@@ -108,12 +108,6 @@
     <None Include="E:\Projects\cpprestsdk\build\Release\samples\CMakeFiles\samples" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="E:\Projects\cpprestsdk\build\Release\samples\BingRequest\BingRequest.vcxproj">
       <Project>{678C58C7-EFFC-39BF-BE66-62F563FE9139}</Project>
       <Name>BingRequest</Name>

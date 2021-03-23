@@ -74,7 +74,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
       <ConformanceMode>true</ConformanceMode>
@@ -185,7 +185,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_72;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp;$(ProjectDir)..\..\..\..\..\Release\tests\common\utilities\include;$(ProjectDir)..\..\..\..\..\Release\include;$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\.;$(ProjectDir)..\..\..\..\..\..\..\Boost\include\boost-1_75;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
       <ConformanceMode>true</ConformanceMode>
@@ -238,14 +238,6 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

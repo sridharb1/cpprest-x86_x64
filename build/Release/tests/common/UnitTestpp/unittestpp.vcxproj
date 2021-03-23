@@ -236,12 +236,6 @@
     <ClCompile Include="$(ProjectDir)..\..\..\..\..\Release\tests\common\UnitTestpp\src\Win32\TimeHelpers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Projects\cpprestsdk\build\ZERO_CHECK.vcxproj">
-      <Project>{DD741C3E-7584-363D-B705-F01C20DA83F4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="E:\Projects\cpprestsdk\build\Release\src\cpprest.vcxproj">
       <Project>{33E4A8BF-99A1-3393-A900-B531BDA00C97}</Project>
       <Name>cpprest</Name>

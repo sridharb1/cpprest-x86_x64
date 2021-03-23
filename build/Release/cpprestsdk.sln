@@ -48,10 +48,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SearchFile", "samples\Searc
 		{33E4A8BF-99A1-3393-A900-B531BDA00C97} = {33E4A8BF-99A1-3393-A900-B531BDA00C97}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\\ZERO_CHECK.vcxproj", "{DD741C3E-7584-363D-B705-F01C20DA83F4}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "blackjackclient", "samples\BlackJack\BlackJack_Client\blackjackclient.vcxproj", "{67418E71-727F-3220-9742-DABB09D34A1F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{DD741C3E-7584-363D-B705-F01C20DA83F4} = {DD741C3E-7584-363D-B705-F01C20DA83F4}
